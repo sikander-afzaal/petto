@@ -8,7 +8,13 @@ function Header({ setModal, setModalName }) {
           <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
             Services
           </p>
-          <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
+          <p
+            onClick={() => {
+              setModal(true);
+              setModalName("testimonials");
+            }}
+            className="cursor-pointer no-underline text-white text-[15px] font-semibold"
+          >
             Testimonials
           </p>
           <p

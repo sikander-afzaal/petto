@@ -9,6 +9,7 @@ import Hero from "./Pages/Hero";
 import Mobile from "./Pages/Mobile";
 import Pet from "./Pages/Pet";
 import Sitter from "./Pages/Sitter";
+import Testimonials from "./Pages/Testimonials";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -30,6 +31,9 @@ function App() {
         break;
       case "about":
         setComponent(<About />);
+        break;
+      case "testimonials":
+        setComponent(<Testimonials />);
         break;
 
       default:
