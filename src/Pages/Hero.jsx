@@ -38,7 +38,7 @@ function Hero() {
       />
       <div className="w-full max-w-[865px] flex items-center justify-start pt-[160px] min-h-[900px] flex-col gap-9">
         <div className="relative isolate">
-          <AnimatePresence>
+          <AnimatePresence wait>
             {bg === "first" && (
               <motion.img
                 initial={{ opacity: 0 }}

@@ -10,8 +10,8 @@ import {
 function Footer() {
   return (
     <div className="w-full px-8 bg-black flex justify-center gap-[160px] items-center py-12 flex-col">
-      <div className="w-full  bg-black flex justify-start gap-[160px] items-start ">
-        <div className="flex justify-start items-start flex-col gap-[15px]">
+      <div className="w-full  bg-black flex flex-col 2xl:flex-row lg:grid grid-cols-1 lg:grid-cols-3 2xl:flex justify-center items-center  lg:justify-start gap-10 lg:gap-[160px] 2xl:items-start ">
+        <div className=" flex justify-start items-center lg:items-start flex-col gap-[15px]">
           <h2 className="text-white font-bold text-xl">Learn More</h2>
           <a
             href="#"
@@ -38,7 +38,7 @@ function Footer() {
             petto Guarantee
           </a>
         </div>
-        <div className="flex justify-start items-start flex-col gap-[15px]">
+        <div className="flex justify-start items-center lg:items-start flex-col gap-[15px]">
           <h2 className="text-white font-bold text-xl">About Petto</h2>
           <a
             href="#"
@@ -83,7 +83,7 @@ function Footer() {
             Investor Relations
           </a>
         </div>
-        <div className="flex justify-start items-start flex-col gap-[15px]">
+        <div className="flex justify-start items-center lg:items-start flex-col gap-[15px]">
           <h2 className="text-white font-bold text-xl opacity-0">
             About Petto
           </h2>
@@ -118,7 +118,7 @@ function Footer() {
             Terms of Service
           </a>
         </div>
-        <div className="flex justify-start items-start flex-col gap-[15px]">
+        <div className="flex justify-start items-center lg:items-start flex-col gap-[15px]">
           <h2 className="text-white font-bold text-xl">Need Help?</h2>
           <a
             href="#"
@@ -127,7 +127,7 @@ function Footer() {
             Help Center
           </a>
         </div>
-        <div className="flex justify-start items-start flex-col gap-[15px]">
+        <div className="flex justify-start items-center lg:items-start flex-col gap-[15px]">
           <h2 className="text-white font-bold text-xl">Connect</h2>
           <div className="flex justify-center items-center gap-4">
             <a

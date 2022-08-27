@@ -10,6 +10,7 @@ module.exports = {
       },
       boxShadow: {
         "shadow-btn": "0px 10px 18px rgba(234, 180, 84, 0.4)",
+        "shadow-orange": "0px 10px 18px rgba(233, 78, 36, 0.3)",
       },
     },
   },
