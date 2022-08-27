@@ -5,6 +5,7 @@ import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
 import Contact from "./Pages/Contact";
 import Hero from "./Pages/Hero";
+import Pet from "./Pages/Pet";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -15,6 +16,9 @@ function App() {
       case "contact":
         setComponent(<Contact />);
         break;
+      case "pet":
+        setComponent(<Pet />);
+        break;
 
       default:
         break;
@@ -24,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header setModalName={setModalName} setModal={setModal} />
-      <Hero />
+      <Hero setModalName={setModalName} setModal={setModal} />
       <AnimatePresence>
         {modal && (
           <motion.div

@@ -7,7 +7,7 @@ import pet3 from "../Assets/hero3.png";
 import heroBg from "../Assets/hero-bg.png";
 import logo from "../Assets/Logo.png";
 import { AnimatePresence, motion } from "framer-motion";
-function Hero() {
+function Hero({ setModalName, setModal }) {
   const [bg, setBg] = useState("first");
   useEffect(() => {
     setTimeout(() => {
@@ -79,7 +79,13 @@ function Hero() {
           Trust the Best with Your Pets
         </h1>
         <div className="flex justify-center items-center gap-5">
-          <button className="flex justify-center items-center rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]">
+          <button
+            onClick={() => {
+              setModal(true);
+              setModalName("pet");
+            }}
+            className="flex justify-center items-center rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]"
+          >
             Register Your Pet{" "}
             <FontAwesomeIcon icon={faArrowRight} className="ml-3 text-[18px]" />
           </button>
