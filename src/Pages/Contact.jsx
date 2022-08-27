@@ -6,6 +6,7 @@ function Contact() {
   const dropItems = ["Booking", "Billing", "Sitter", "General Inquiry"];
   const [drop, setDrop] = useState(false);
   const [filterDrop, setFilterDrop] = useState([...dropItems]);
+  const [dropText, setDropText] = useState("");
   const dropHandler = (e) => {
     const value = e.target.value;
     if (value === "") {
@@ -35,7 +36,7 @@ function Contact() {
         We would like to hear from you!
       </p>
       <form className="w-full mt-6 gap-6 flex-col flex justify-center items-center">
-        <div className=" flex justify-between items-center gap-5 w-full">
+        <div className="md:flex-row flex-col flex justify-between items-center gap-5 w-full">
           <div className="flex justify-center w-full items-start gap-4 flex-col">
             <label className="font-bold text-base" htmlFor="name">
               Full Name
@@ -47,7 +48,7 @@ function Contact() {
               className="w-full pl-4 h-[60px] bg-white rounded-[12px] border-solid border-[1px] border-[#e0e0e0] text-[15px] text-[#b1b1b1]"
             />
           </div>
-          <div className="flex justify-center w-full items-start gap-4 flex-col">
+          <div className=" flex justify-center w-full items-start gap-4 flex-col">
             <label className="font-bold text-base" htmlFor="email">
               Email Address
             </label>
@@ -59,7 +60,7 @@ function Contact() {
             />
           </div>
         </div>
-        <div className=" flex justify-between items-center gap-5 w-full">
+        <div className="md:flex-row flex-col flex justify-between items-center gap-5 w-full">
           <div className="flex justify-center w-full items-start gap-4 flex-col">
             <label className="font-bold text-base" htmlFor="num">
               Phone Number
@@ -85,6 +86,7 @@ function Contact() {
               <input
                 onChange={dropHandler}
                 type="text"
+                value={dropText}
                 id="inquire"
                 placeholder="Select User Type"
                 className="w-full pl-4 h-[60px] bg-transparent border-none text-[15px] text-[#b1b1b1]"
@@ -103,7 +105,18 @@ function Contact() {
                 }`}
               >
                 {filterDrop.map((elem, idx) => {
-                  return <h2 key={"drop" + idx}>{elem}</h2>;
+                  return (
+                    <h2
+                      className="cursor-pointer"
+                      onClick={(e) => {
+                        setDropText(e.target.innerText);
+                        setDrop(false);
+                      }}
+                      key={"drop" + idx}
+                    >
+                      {elem}
+                    </h2>
+                  );
                 })}
               </div>
             </div>

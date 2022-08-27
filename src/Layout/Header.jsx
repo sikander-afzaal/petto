@@ -1,15 +1,33 @@
-import React from "react";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 
 function Header({ setModal, setModalName }) {
+  const [header, setHeader] = useState(false);
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex justify-between items-center w-full max-w-[865px] h-[120px]">
-        <div className="flex justify-center items-center gap-6">
+      <div className="flex justify-between items-center w-full max-w-[865px] h-[120px] px-5">
+        <FontAwesomeIcon
+          onClick={() => setHeader((prev) => !prev)}
+          className="text-white text-2xl relative z-30 md:hidden block"
+          icon={header ? faXmark : faBars}
+        />
+        <div
+          className={`md:hidden ${
+            header ? "block" : "hidden"
+          } fixed top-0 left-0 w-screen h-screen z-[19] bg-black opacity-60`}
+        ></div>
+        <div
+          className={`transition-all md:flex-row flex-col md:bg-transparent bg-darkOrange z-20 md:static fixed top-0 ${
+            header ? "left-0" : "-left-[600px]"
+          } h-screen md:h-auto md:max-w-none max-w-[400px] w-full md:w-auto flex justify-center items-center gap-6`}
+        >
           <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
             Services
           </p>
           <p
             onClick={() => {
+              setHeader(false);
               setModal(true);
               setModalName("testimonials");
             }}
@@ -19,6 +37,7 @@ function Header({ setModal, setModalName }) {
           </p>
           <p
             onClick={() => {
+              setHeader(false);
               setModal(true);
               setModalName("about");
             }}
@@ -28,6 +47,7 @@ function Header({ setModal, setModalName }) {
           </p>
           <p
             onClick={() => {
+              setHeader(false);
               setModal(true);
               setModalName("mobile");
             }}
@@ -37,6 +57,7 @@ function Header({ setModal, setModalName }) {
           </p>
           <p
             onClick={() => {
+              setHeader(false);
               setModal(true);
               setModalName("contact");
             }}

@@ -8,7 +8,7 @@ import b2 from "../Assets/b2.png";
 import b3 from "../Assets/b3.png";
 function Testimonials() {
   return (
-    <div className="flex-col flex justify-center items-center isolate w-full relative max-w-[1350px] gap-6">
+    <div className="flex-col flex justify-center items-center isolate w-full relative max-w-[1350px] gap-6 sm:text-left text-center">
       <img
         src={bg}
         className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
@@ -23,7 +23,11 @@ function Testimonials() {
       </p>
       <div className="flex lg:flex-row flex-col justify-between items-center lg:items-start mt-[160px] w-full">
         <div className="relative">
-          <img src={b1} className="absolute left-[16%] bottom-[94%]" alt="" />
+          <img
+            src={b1}
+            className="absolute left-0 sm:left-[16%] bottom-[90%] sm:bottom-[94%]"
+            alt=""
+          />
           <img src={review1} alt="" />
         </div>
         <div className="flex flex-col lg:-mt-[120px] justify-start items-center lg:items-start">

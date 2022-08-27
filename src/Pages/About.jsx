@@ -13,14 +13,14 @@ function About() {
       <div className="lg:block flex justify-center items-start flex-col w-full lg:w-auto">
         <img src={dog} className="dog" alt="" />
         <div className="lg:h-[700px] pt-7 lg:pt-[120px]">
-          <h1 className="font-medium text-[38px] text-black tracking-[0.2em]">
+          <h1 className="font-medium text-[33px] sm:text-left text-center sm:text-[38px] text-black tracking-[0.2em]">
             About{" "}
             <span className="text-darkOrange font-bold">
               pett
               <img className="inline-block" src={o} alt="" />
             </span>{" "}
           </h1>
-          <p className="mt-[30px] text-[22px] font-light leading-[50px]">
+          <p className="sm:mt-[30px] text-[22px] sm:text-left text-center font-light leading-9 sm:leading-[50px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

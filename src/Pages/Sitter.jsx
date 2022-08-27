@@ -9,7 +9,7 @@ import card5 from "../Assets/card5.png";
 import card6 from "../Assets/card6.png";
 function Sitter() {
   return (
-    <div className="flex  justify-start items-center isolate flex-col w-full relative max-w-[1150px] gap-6">
+    <div className="flex  justify-start items-center isolate flex-col w-full relative max-w-[1150px] gap-6 sm:text-left text-center">
       <img
         src={bg}
         className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
