@@ -21,3 +21,30 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.dog {
+  float: right;
+  width: 750px;
+  display: block;
+  height: 800px;
+  shape-outside: polygon(
+    10.47% 9.88%,
+    -2.91% 12.87%,
+    -2.4% 26.21%,
+    -2.56% 36.45%,
+    8.77% 39.3%,
+    26.52% 44.91%,
+    33.27% 61.35%,
+    26.36% 71.05%,
+    22.48% 90.02%,
+    23.69% 98.98%
+  );
+}
+@media screen and (max-width: 1024px) {
+  .dog {
+    width: 60%;
+    height: auto;
+    float: none;
+    align-self: center;
+  }
+}

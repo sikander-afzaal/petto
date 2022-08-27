@@ -5,16 +5,28 @@ function Header({ setModal, setModalName }) {
     <div className="w-full flex justify-center items-center">
       <div className="flex justify-between items-center w-full max-w-[865px] h-[120px]">
         <div className="flex justify-center items-center gap-6">
-          <p className="no-underline text-white text-[15px] font-semibold">
+          <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
             Services
           </p>
-          <p className="no-underline text-white text-[15px] font-semibold">
+          <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
             Testimonials
           </p>
-          <p className="no-underline text-white text-[15px] font-semibold">
+          <p
+            onClick={() => {
+              setModal(true);
+              setModalName("about");
+            }}
+            className="cursor-pointer no-underline text-white text-[15px] font-semibold"
+          >
             About Us
           </p>
-          <p className="no-underline text-white text-[15px] font-semibold">
+          <p
+            onClick={() => {
+              setModal(true);
+              setModalName("mobile");
+            }}
+            className="cursor-pointer no-underline text-white text-[15px] font-semibold"
+          >
             Download Our App
           </p>
           <p

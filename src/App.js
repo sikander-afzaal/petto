@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import Modal from "./Components/Modal";
 import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
+import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Hero from "./Pages/Hero";
+import Mobile from "./Pages/Mobile";
 import Pet from "./Pages/Pet";
 import Sitter from "./Pages/Sitter";
 
@@ -22,6 +24,12 @@ function App() {
         break;
       case "sitter":
         setComponent(<Sitter />);
+        break;
+      case "mobile":
+        setComponent(<Mobile />);
+        break;
+      case "about":
+        setComponent(<About />);
         break;
 
       default:
