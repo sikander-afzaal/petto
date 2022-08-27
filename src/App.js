@@ -6,6 +6,7 @@ import Header from "./Layout/Header";
 import Contact from "./Pages/Contact";
 import Hero from "./Pages/Hero";
 import Pet from "./Pages/Pet";
+import Sitter from "./Pages/Sitter";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -18,6 +19,9 @@ function App() {
         break;
       case "pet":
         setComponent(<Pet />);
+        break;
+      case "sitter":
+        setComponent(<Sitter />);
         break;
 
       default:

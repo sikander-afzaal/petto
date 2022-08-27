@@ -89,7 +89,13 @@ function Hero({ setModalName, setModal }) {
             Register Your Pet{" "}
             <FontAwesomeIcon icon={faArrowRight} className="ml-3 text-[18px]" />
           </button>
-          <button className="rounded-[12px] bg-transparent border-2 border-white border-solid text-white py-[18px] px-[41px] font-bold text-[15px]">
+          <button
+            onClick={() => {
+              setModal(true);
+              setModalName("sitter");
+            }}
+            className="rounded-[12px] bg-transparent border-2 border-white border-solid text-white py-[18px] px-[41px] font-bold text-[15px]"
+          >
             Become a Sitter
           </button>
         </div>
