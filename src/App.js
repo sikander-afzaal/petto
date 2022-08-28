@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import Hero from "./Pages/Hero";
 import Mobile from "./Pages/Mobile";
 import Pet from "./Pages/Pet";
+import Services from "./Pages/Services";
 import Sitter from "./Pages/Sitter";
 import Testimonials from "./Pages/Testimonials";
 
@@ -34,6 +35,9 @@ function App() {
         break;
       case "testimonials":
         setComponent(<Testimonials />);
+        break;
+      case "services":
+        setComponent(<Services />);
         break;
 
       default:

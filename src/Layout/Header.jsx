@@ -22,7 +22,14 @@ function Header({ setModal, setModalName }) {
             header ? "left-0" : "-left-[600px]"
           } h-screen md:h-auto md:max-w-none max-w-[400px] w-full md:w-auto flex justify-center items-center gap-6`}
         >
-          <p className="cursor-pointer no-underline text-white text-[15px] font-semibold">
+          <p
+            onClick={() => {
+              setHeader(false);
+              setModal(true);
+              setModalName("services");
+            }}
+            className="cursor-pointer no-underline text-white text-[15px] font-semibold"
+          >
             Services
           </p>
           <p
