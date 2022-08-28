@@ -86,6 +86,13 @@ function Services() {
                 img: service1,
               });
             }}
+            onMouseEnter={() => {
+              setServiceProp({
+                name: "Boarding",
+                desc: "Customer’s pet goes over to the sitter's place and stays overnight.",
+                img: service1,
+              });
+            }}
             className="col-span-1 row-span-2 lg:self-center flex justify-center items-center"
           >
             <Card
@@ -97,6 +104,13 @@ function Services() {
           </div>
           <div
             onClick={() => {
+              setServiceProp({
+                name: "Pet Day Care",
+                desc: "Client’s pet stays at the sitter's place during the day. Drop offs 7-9 AM and Pick-ups 4-6 PM. ",
+                img: service2,
+              });
+            }}
+            onMouseEnter={() => {
               setServiceProp({
                 name: "Pet Day Care",
                 desc: "Client’s pet stays at the sitter's place during the day. Drop offs 7-9 AM and Pick-ups 4-6 PM. ",
@@ -121,6 +135,13 @@ function Services() {
                 img: service6,
               });
             }}
+            onMouseEnter={() => {
+              setServiceProp({
+                name: "Pet Sitting",
+                desc: "Sitter goes to the customer's place and spends the day with the pet. ",
+                img: service6,
+              });
+            }}
             className="lg:-mt-[30px] col-start-2 col-end-3 row-span-2 lg:self-start flex justify-center items-center cursor-pointer"
           >
             {" "}
@@ -133,6 +154,13 @@ function Services() {
           </div>
           <div
             onClick={() => {
+              setServiceProp({
+                name: "Dog Walking",
+                desc: "Sitter picks up the dog, takes it out on its walk and then drops it back to its owner.",
+                img: service4,
+              });
+            }}
+            onMouseEnter={() => {
               setServiceProp({
                 name: "Dog Walking",
                 desc: "Sitter picks up the dog, takes it out on its walk and then drops it back to its owner.",
@@ -157,6 +185,13 @@ function Services() {
                 img: service3,
               });
             }}
+            onMouseEnter={() => {
+              setServiceProp({
+                name: "Overnight Sitting",
+                desc: "Sitter goes to the customer's place and stays overnight.",
+                img: service3,
+              });
+            }}
             className="lg:mt-[30px] col-start-3 col-end-4 row-start-2 row-end-3 lg:self-start flex justify-center items-center cursor-pointer"
           >
             <Card
@@ -168,6 +203,13 @@ function Services() {
           </div>
           <div
             onClick={() => {
+              setServiceProp({
+                name: "Drop-In Visits",
+                desc: "Sitter drops in for 20 minutes to change the pet's food + water and chills with the pet.",
+                img: service5,
+              });
+            }}
+            onMouseEnter={() => {
               setServiceProp({
                 name: "Drop-In Visits",
                 desc: "Sitter drops in for 20 minutes to change the pet's food + water and chills with the pet.",
