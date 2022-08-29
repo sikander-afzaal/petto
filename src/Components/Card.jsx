@@ -12,7 +12,9 @@ function Card({ text, img, width, active }) {
       <img
         src={img}
         alt=""
-        className={`w-[50%]  ${active ? "brightness-0 invert" : ""}`}
+        className={`w-[50%] max-w-[87.5px]  ${
+          active ? "brightness-0 invert" : ""
+        }`}
       />
       <h2
         className={` ${width ? "text-base" : "text-[21px]"} font-semibold ${
