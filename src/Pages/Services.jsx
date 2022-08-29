@@ -42,7 +42,7 @@ function Services() {
             serviceProp.img
               ? "flex justify-start items-center xl:items-start gap-7 relative flex-col lg:pl-12"
               : ""
-          }   ${serviceProp.img ? "2xl:h-[612px]" : ""}`}
+          }   ${serviceProp.img ? "h-[612px]" : ""}`}
         >
           {serviceProp.img ? (
             <>
