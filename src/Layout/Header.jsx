@@ -6,7 +6,7 @@ function Header({ setModal, setModalName }) {
   const [header, setHeader] = useState(false);
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex lg:justify-start justify-between lg:gap-[120px] items-center w-full max-w-[900px] h-[120px] px-5">
+      <div className="lg:ml-[120px] flex lg:justify-start justify-between lg:gap-[120px] items-center w-full max-w-[900px] h-[120px] px-5">
         <FontAwesomeIcon
           onClick={() => setHeader((prev) => !prev)}
           className="text-white text-2xl relative z-30 md:hidden block"

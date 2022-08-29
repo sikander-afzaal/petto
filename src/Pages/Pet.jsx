@@ -72,6 +72,9 @@ function Pet() {
                 className="w-full px-4 h-[60px] bg-white rounded-[12px] border-solid border-[1px] border-[#e0e0e0] text-[15px] text-[#b1b1b1]"
               />
             </div>
+            <button className="rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]">
+              Register
+            </button>
           </form>
         </div>
       </div>

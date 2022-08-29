@@ -46,7 +46,7 @@ function App() {
   }, [modalName]);
 
   return (
-    <div className="App">
+    <div className={`${modal ? "overflow-hidden max-h-screen" : ""}`}>
       <Header setModalName={setModalName} setModal={setModal} />
       <Hero setModalName={setModalName} setModal={setModal} />
       <AnimatePresence>
