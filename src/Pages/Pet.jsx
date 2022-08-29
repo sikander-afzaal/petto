@@ -1,14 +1,8 @@
 import React from "react";
-import bg from "../Assets/confetti.png";
 import parrot from "../Assets/parrot.png";
 function Pet() {
   return (
     <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 sm:text-left text-center">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <div className="flex justify-between items-start w-full gap-9">
         <img
           className="lg:block hidden w-[50%] max-w-[373px] object-contain"

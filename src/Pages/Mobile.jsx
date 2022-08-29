@@ -1,5 +1,4 @@
 import React from "react";
-import bg from "../Assets/confetti.png";
 import mobile from "../Assets/mobile.png";
 import girl from "../Assets/girl.png";
 import google from "../Assets/google.png";
@@ -9,11 +8,6 @@ import blackO from "../Assets/black-o.svg";
 function Mobile() {
   return (
     <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 lg:text-left text-center">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <h1 className="font-medium text-[30px] md:text-[38px] text-black tracking-[0.2em]">
         Book through{" "}
         <span className="text-darkOrange font-bold">

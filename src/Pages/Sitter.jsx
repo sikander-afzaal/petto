@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../Components/Card";
-import bg from "../Assets/confetti.png";
 import card1 from "../Assets/card1.png";
 import card2 from "../Assets/card2.png";
 import card3 from "../Assets/card3.png";
@@ -10,11 +9,6 @@ import card6 from "../Assets/card6.png";
 function Sitter() {
   return (
     <div className="flex  justify-start items-center isolate flex-col w-full relative max-w-[1150px] gap-6 sm:text-left text-center">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <h1 className="font-medium text-[38px] text-black">
         Become a <span className="text-darkOrange">Sitter</span>
       </h1>

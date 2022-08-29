@@ -1,5 +1,4 @@
 import React from "react";
-import bg from "../Assets/confetti.png";
 import review1 from "../Assets/review1.png";
 import review2 from "../Assets/review2.png";
 import review3 from "../Assets/review3.png";
@@ -9,11 +8,6 @@ import b3 from "../Assets/b3.png";
 function Testimonials() {
   return (
     <div className="flex-col flex justify-center items-center isolate w-full relative max-w-[1350px] gap-6 sm:text-left text-center">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <h1 className="font-medium text-[38px] text-black">
         User’s <span className="text-darkOrange">Testimonials</span>
       </h1>

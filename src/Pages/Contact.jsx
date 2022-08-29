@@ -1,7 +1,6 @@
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import bg from "../Assets/confetti.png";
 function Contact() {
   const dropItems = ["Booking", "Billing", "Sitter", "General Inquiry"];
   const [drop, setDrop] = useState(false);
@@ -24,11 +23,6 @@ function Contact() {
   };
   return (
     <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <h1 className="font-medium text-[38px] text-black">
         Get in <span className="text-darkOrange">Touch</span>
       </h1>

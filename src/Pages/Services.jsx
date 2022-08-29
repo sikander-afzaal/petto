@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import bg from "../Assets/confetti.png";
 import blackO from "../Assets/black-o.svg";
 import Card from "../Components/Card";
 import card1 from "../Assets/card1.png";
@@ -25,11 +24,6 @@ function Services() {
   });
   return (
     <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 lg:text-left text-center">
-      <img
-        src={bg}
-        className="absolute left-0 top-0 w-full h-full -z-10 object-cover"
-        alt=""
-      />
       <h1 className="font-bold text-[30px] md:text-[38px] text-darkOrange tracking-[0.2em]">
         <span className="text-black font-medium">
           pett
@@ -48,7 +42,7 @@ function Services() {
             serviceProp.img
               ? "flex justify-start items-center xl:items-start gap-7 relative flex-col lg:pl-12"
               : ""
-          }  2xl:h-[800px] ${serviceProp.img ? "h-[800px]" : ""}`}
+          }   ${serviceProp.img ? "2xl:h-[612px]" : ""}`}
         >
           {serviceProp.img ? (
             <>
@@ -65,13 +59,13 @@ function Services() {
               </button>
               <img
                 src={serviceProp.img}
-                className="absolute left-0 bottom-[14%] -z-[1]"
+                className="absolute left-0 bottom-[0%] -z-[1]"
                 alt=""
               />
             </>
           ) : (
             <img
-              className="hidden lg:block w-full object-fill h-[800px]  top-0 right-[10%] absolute "
+              className="hidden lg:block w-[1000px] object-fill   top-0 left-[0%] absolute "
               src={cat}
               alt=""
             />
