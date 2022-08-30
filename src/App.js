@@ -16,28 +16,36 @@ function App() {
   const [modal, setModal] = useState(false);
   const [modalName, setModalName] = useState("");
   const [component, setComponent] = useState("");
+  const [bg, setBg] = useState("");
   useEffect(() => {
     switch (modalName) {
       case "contact":
         setComponent(<Contact />);
+        setBg("bg-contact-confetti");
         break;
       case "pet":
         setComponent(<Pet />);
+        setBg("bg-profile-confetti");
         break;
       case "sitter":
         setComponent(<Sitter />);
+        setBg("bg-sitter-confetti");
         break;
       case "mobile":
         setComponent(<Mobile />);
+        setBg("bg-app-confetti");
         break;
       case "about":
         setComponent(<About />);
+        setBg("bg-about-confetti");
         break;
       case "testimonials":
         setComponent(<Testimonials />);
+        setBg("bg-testimonial-confetti");
         break;
       case "services":
         setComponent(<Services />);
+        setBg("bg-service-confetti");
         break;
 
       default:
@@ -59,7 +67,7 @@ function App() {
             transition={{ delay: 0.2, duration: 0.8 }}
             exit={{ opacity: 0, bottom: "-100vh" }}
           >
-            <Modal setModal={setModal} Component={component} />
+            <Modal bg={bg} setModal={setModal} Component={component} />
           </motion.div>
         )}
       </AnimatePresence>

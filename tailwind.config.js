@@ -9,7 +9,13 @@ module.exports = {
         lightWhite: "rgba(255, 255, 255, 0.15)",
       },
       backgroundImage: {
-        confetti: "url('/src/Assets/confetti.png')",
+        "service-confetti": "url('/src/Assets/confetti.png')",
+        "testimonial-confetti": "url('/src/Assets/confetti2.png')",
+        "about-confetti": "url('/src/Assets/confetti3.png')",
+        "app-confetti": "url('/src/Assets/confetti4.png')",
+        "contact-confetti": "url('/src/Assets/confetti5.png')",
+        "profile-confetti": "url('/src/Assets/confetti6.png')",
+        "sitter-confetti": "url('/src/Assets/confetti7.png')",
       },
       boxShadow: {
         "shadow-btn": "0px 10px 18px rgba(234, 180, 84, 0.4)",
