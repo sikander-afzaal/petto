@@ -23,7 +23,7 @@ function Services() {
     img: "",
   });
   return (
-    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 lg:text-left text-center">
+    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] -mt-8 gap-5 lg:text-left text-center">
       <h1 className="font-bold text-[30px] md:text-[38px] text-darkOrange tracking-[0.2em]">
         <span className="text-black font-medium">
           pett

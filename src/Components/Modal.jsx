@@ -6,7 +6,7 @@ function Modal({ setModal, Component, bg }) {
   return (
     <div
       className={`${bg} bg-cover ${
-        bg === "bg-service-confetti" ? "bg-[center_-8%]" : ""
+        bg === "bg-service-confetti" ? "bg-[center_top]" : ""
       } ${
         bg === "bg-about-confetti" ? "bg-[center_15%]" : ""
       }    modal w-full rounded-tl-[50px] rounded-tr-[50px] bg-white z-20 min-h-[95vh] max-h-[95vh] overflow-y-auto flex flex-col justify-start items-center py-5 px-10`}
