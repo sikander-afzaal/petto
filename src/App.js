@@ -11,6 +11,8 @@ import Pet from "./Pages/Pet";
 import Services from "./Pages/Services";
 import Sitter from "./Pages/Sitter";
 import Testimonials from "./Pages/Testimonials";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -55,6 +57,7 @@ function App() {
 
   return (
     <div className={`${modal ? "overflow-hidden max-h-screen" : ""}`}>
+      <ToastContainer />
       <Header setModalName={setModalName} setModal={setModal} />
       <Hero setModalName={setModalName} setModal={setModal} />
       <AnimatePresence>

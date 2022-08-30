@@ -1,11 +1,18 @@
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+
 function Contact() {
   const dropItems = ["Booking", "Billing", "Sitter", "General Inquiry"];
   const [drop, setDrop] = useState(false);
   const [filterDrop, setFilterDrop] = useState([...dropItems]);
   const [dropText, setDropText] = useState("");
+  const [form, setForm] = useState({
+    name: "",
+    number: "",
+    email: "",
+    message: "",
+  });
   const dropHandler = (e) => {
     const value = e.target.value;
     if (value === "") {
@@ -38,6 +45,12 @@ function Contact() {
             <input
               type="text"
               id="name"
+              value={form.name}
+              onChange={(e) =>
+                setForm((prev) => {
+                  return { ...prev, name: e.target.value };
+                })
+              }
               placeholder="Enter your full name"
               className="w-full pl-4 h-[60px] bg-white rounded-[12px] border-solid border-[1px] border-[#e0e0e0] text-[15px] text-[#b1b1b1]"
             />
@@ -49,6 +62,12 @@ function Contact() {
             <input
               type="email"
               id="email"
+              value={form.email}
+              onChange={(e) =>
+                setForm((prev) => {
+                  return { ...prev, email: e.target.value };
+                })
+              }
               placeholder="Enter your email address"
               className="w-full pl-4 h-[60px] bg-white rounded-[12px] border-solid border-[1px] border-[#e0e0e0] text-[15px] text-[#b1b1b1]"
             />
@@ -67,6 +86,12 @@ function Contact() {
               <input
                 type="number"
                 id="num"
+                value={form.number}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, number: e.target.value };
+                  })
+                }
                 placeholder="Enter your phone number"
                 className="w-full pl-4 h-[60px] bg-transparent border-none text-[15px] text-[#b1b1b1]"
               />
@@ -123,6 +148,12 @@ function Contact() {
           <textarea
             type="text"
             id="message"
+            value={form.message}
+            onChange={(e) =>
+              setForm((prev) => {
+                return { ...prev, message: e.target.value };
+              })
+            }
             placeholder="Type your message here"
             className="pt-4 w-full pl-4 h-[200px] resize-none bg-white rounded-[12px] border-solid border-[1px] border-[#e0e0e0] text-[15px] text-[#b1b1b1]"
           ></textarea>

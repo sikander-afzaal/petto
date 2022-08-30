@@ -1,6 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 import parrot from "../Assets/parrot.png";
+import { db } from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
 function Pet() {
+  const [form, setForm] = useState({
+    name: "",
+    zip: "",
+    email: "",
+    password: "",
+    confirm: "",
+  });
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (
+      form.name === "" ||
+      form.email === "" ||
+      form.zip === "" ||
+      form.password === "" ||
+      form.password === ""
+    ) {
+      return toast.error("Please fill the form!");
+    }
+    if (form.password === form.confirm) {
+      const userCollection = collection(db, "Users");
+      addDoc(userCollection, {
+        name: form.name,
+        email: form.email,
+        password: form.password,
+        zip: form.zip,
+      })
+        .then(() => {
+          return toast.success("Pet registered successfully");
+        })
+        .catch((err) => {
+          // console.log(err);
+          return toast.error("Uh Oh an error occurred please try again");
+        })
+        .finally(() => {
+          setForm({ name: "", zip: "", email: "", password: "", confirm: "" });
+        });
+    } else {
+      toast.error("Passwords dont match!");
+    }
+  };
   return (
     <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 sm:text-left text-center">
       <div className="flex justify-between items-start w-full gap-9">
@@ -16,12 +59,21 @@ function Pet() {
           <p className="text-[#b1b1b1] text-xl font-medium tracking-wider">
             Register your first pet with petto and relax
           </p>
-          <form className="w-full mt-6 gap-6 flex-col flex justify-center items-center">
+          <form
+            onSubmit={submitHandler}
+            className="w-full mt-6 gap-6 flex-col flex justify-center items-center"
+          >
             <div className="flex justify-center w-full items-start gap-4 flex-col">
               <label className="font-bold text-base" htmlFor="name">
                 Full Name
               </label>
               <input
+                value={form.name}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, name: e.target.value };
+                  })
+                }
                 type="text"
                 id="name"
                 placeholder="Enter your full name"
@@ -33,6 +85,12 @@ function Pet() {
                 Email Address
               </label>
               <input
+                value={form.email}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, email: e.target.value };
+                  })
+                }
                 type="text"
                 id="email"
                 placeholder="Enter your email address"
@@ -44,6 +102,12 @@ function Pet() {
                 Zip/Postal Code
               </label>
               <input
+                value={form.zip}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, zip: e.target.value };
+                  })
+                }
                 type="text"
                 id="zip"
                 placeholder="Enter your Zip/Postal Code"
@@ -55,6 +119,12 @@ function Pet() {
                 Password
               </label>
               <input
+                value={form.password}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, password: e.target.value };
+                  })
+                }
                 type="password"
                 id="pwd"
                 placeholder="Type the Password"
@@ -66,6 +136,12 @@ function Pet() {
                 Confirm Password
               </label>
               <input
+                value={form.confirm}
+                onChange={(e) =>
+                  setForm((prev) => {
+                    return { ...prev, confirm: e.target.value };
+                  })
+                }
                 type="password"
                 id="cpwd"
                 placeholder="Type the Password"
