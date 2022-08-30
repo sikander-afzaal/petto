@@ -63,7 +63,7 @@ function App() {
       <AnimatePresence>
         {modal && (
           <motion.div
-            className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[99%] z-20"
+            className="fixed bottom-0 overflow-y-auto modal min-h-[95vh] max-h-[95vh] left-1/2 bg-white rounded-tl-[50px] rounded-tr-[50px] -translate-x-1/2 w-[99%] z-20"
             key={modal}
             initial={{ opacity: 0, bottom: "-100vh" }}
             animate={{ bottom: 0, opacity: 1 }}

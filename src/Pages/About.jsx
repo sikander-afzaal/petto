@@ -4,7 +4,7 @@ import o from "../Assets/o.svg";
 function About() {
   return (
     <div className=" isolate w-full relative max-w-[1350px] gap-6">
-      <div className="lg:block flex justify-center items-start flex-col pt-9 w-full lg:w-auto">
+      <div className="lg:block flex justify-center items-start flex-col pt-3 w-full lg:w-auto">
         <img src={dog} className="dog" alt="" />
         <div className="lg:h-[700px] pt-7 lg:pt-[120px]">
           <h1 className="font-medium text-[33px] sm:text-left text-center sm:text-[38px] text-black tracking-[0.2em]">

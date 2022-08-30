@@ -6,10 +6,10 @@ function Modal({ setModal, Component, bg }) {
   return (
     <div
       className={`${bg} bg-cover ${
-        bg === "bg-service-confetti" ? "bg-[center_top]" : ""
+        bg === "bg-service-confetti" ? "bg-[center_top] mt-9" : ""
       } ${
-        bg === "bg-about-confetti" ? "bg-[center_15%]" : ""
-      }    modal w-full rounded-tl-[50px] rounded-tr-[50px] bg-white z-20 min-h-[95vh] max-h-[95vh] overflow-y-auto flex flex-col justify-start items-center py-5 px-10`}
+        bg === "bg-about-confetti" ? "bg-[center_top]" : ""
+      }     w-full  flex flex-col justify-start items-center  py-5 px-10`}
     >
       <div
         onClick={() => setModal(false)}
