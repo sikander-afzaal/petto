@@ -16,7 +16,8 @@ function Testimonials() {
         fugit
       </p>
       <div className="flex lg:flex-row flex-col justify-between items-center lg:items-start mt-[160px] w-full">
-        <div className="relative">
+        <div className=" relative">
+          {" "}
           <img
             src={b1}
             className="absolute left-0 sm:left-[16%] bottom-[90%] sm:bottom-[94%]"
@@ -24,6 +25,7 @@ function Testimonials() {
           />
           <img src={review1} alt="" />
         </div>
+
         <div className="flex flex-col lg:-mt-[120px] justify-start items-center lg:items-start">
           <div className="relative">
             <img

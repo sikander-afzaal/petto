@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import parrot from "../Assets/parrot.png";
 import { db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
-function Pet() {
+function BecomeSitter() {
   const [form, setForm] = useState({
     name: "",
     zip: "",
@@ -54,7 +54,7 @@ function Pet() {
         />
         <div className="flex justify-start items-start w-full flex-col gap-6">
           <h1 className="font-medium text-[38px] text-black">
-            Create your pets's <span className="text-darkOrange">Profile</span>
+            Become a <span className="text-darkOrange">Sitter</span>
           </h1>
           <p className="text-[#b1b1b1] text-xl font-medium tracking-wider">
             Register your first pet with petto and relax
@@ -175,4 +175,4 @@ function Pet() {
   );
 }
 
-export default Pet;
+export default BecomeSitter;

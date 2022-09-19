@@ -24,28 +24,42 @@ body {
 
 .dog {
   float: right;
-  width: 750px;
+  width: auto;
+  height: 100%;
   display: block;
-  height: 800px;
+  object-fit: contain;
   shape-outside: polygon(
-    10.47% 9.88%,
-    -2.91% 12.87%,
-    -2.4% 26.21%,
-    -2.56% 36.45%,
-    8.77% 39.3%,
-    26.52% 44.91%,
-    33.27% 61.35%,
-    26.36% 71.05%,
+    11.02% 9.99%,
+    6.15% 20.13%,
+    4.62% 28.74%,
+    0.4% 36.13%,
+    12.47% 67.55%,
+    28.28% 70.72%,
+    31.35% 78.73%,
     22.48% 90.02%,
-    23.69% 98.98%
+    24.24% 100.14%
   );
+}
+.shape1 {
+  background-color: white;
+  z-index: 99;
 }
 @media screen and (max-width: 1024px) {
   .dog {
     width: 60%;
     height: auto;
     float: none;
-    align-self: center;
+    align-self: flex-end;
+    margin-right: -2.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dog {
+    width: 80%;
+    height: auto;
+    float: none;
+    align-self: flex-end;
+    margin-right: -2.4rem;
   }
 }
 .Toastify {

@@ -13,6 +13,7 @@ import Sitter from "./Pages/Sitter";
 import Testimonials from "./Pages/Testimonials";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BecomeSitter from "./Pages/BecomeSitter";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -24,6 +25,10 @@ function App() {
       case "contact":
         setComponent(<Contact />);
         setBg("bg-contact-confetti");
+        break;
+      case "become-sitter":
+        setComponent(<BecomeSitter />);
+        setBg("bg-profile-confetti");
         break;
       case "pet":
         setComponent(<Pet />);

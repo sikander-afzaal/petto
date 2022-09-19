@@ -92,7 +92,7 @@ function Hero({ setModalName, setModal }) {
           <button
             onClick={() => {
               setModal(true);
-              setModalName("sitter");
+              setModalName("become-sitter");
             }}
             className="h-[62px] sm:w-auto w-full rounded-[12px] bg-transparent border-2 border-white border-solid text-white py-[18px] px-[41px] font-bold text-[15px]"
           >
