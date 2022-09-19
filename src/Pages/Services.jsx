@@ -40,14 +40,14 @@ function Services() {
         <div
           className={`xl:w-[40%] w-full ${
             serviceProp.img
-              ? "flex justify-start items-center xl:items-start gap-7 relative flex-col lg:pl-12"
+              ? "flex justify-start items-center xl:items-start gap-2 relative flex-col lg:pl-12"
               : ""
           }   ${serviceProp.img ? "h-[612px]" : ""}`}
         >
           {serviceProp.img ? (
             <>
               <h1 className="font-semibold text-[32px]">{serviceProp.name}</h1>
-              <p className="text-[22px] max-w-[340px]">
+              <p className="text-[22px] max-w-[400px]">
                 {serviceProp.desc}
               </p>{" "}
               <button className="h-[62px] sm:w-auto w-full flex justify-center items-center rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]">
@@ -76,14 +76,14 @@ function Services() {
             onClick={() => {
               setServiceProp({
                 name: "Boarding",
-                desc: "Customer’s pet goes over to the sitter's place and stays overnight.",
+                desc: "Your pet has the comfort of company while staying overnight at your sitter’s house.",
                 img: service1,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
                 name: "Boarding",
-                desc: "Customer’s pet goes over to the sitter's place and stays overnight.",
+                desc: "Your pet has the comfort of company while staying overnight at your sitter’s house.",
                 img: service1,
               });
             }}
@@ -99,15 +99,15 @@ function Services() {
           <div
             onClick={() => {
               setServiceProp({
-                name: "Pet Day Care",
-                desc: "Client’s pet stays at the sitter's place during the day. Drop offs 7-9 AM and Pick-ups 4-6 PM. ",
+                name: "Day Care",
+                desc: "Your pet enjoys the day at your sitter’s place from morning until evening.",
                 img: service2,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
-                name: "Pet Day Care",
-                desc: "Client’s pet stays at the sitter's place during the day. Drop offs 7-9 AM and Pick-ups 4-6 PM. ",
+                name: "Day Care",
+                desc: "Your pet enjoys the day at your sitter’s place from morning until evening. ",
                 img: service2,
               });
             }}
@@ -118,21 +118,21 @@ function Services() {
               img={card2}
               text={"Pet Day Care"}
               width
-              active={serviceProp.name === "Pet Day Care" ? true : false}
+              active={serviceProp.name === "Day Care" ? true : false}
             />
           </div>
           <div
             onClick={() => {
               setServiceProp({
                 name: "Pet Sitting",
-                desc: "Sitter goes to the customer's place and spends the day with the pet. ",
+                desc: "Your sitter spends the day with your pet at your home from morning until evening.",
                 img: service6,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
                 name: "Pet Sitting",
-                desc: "Sitter goes to the customer's place and spends the day with the pet. ",
+                desc: "Your sitter spends the day with your pet at your home from morning until evening.",
                 img: service6,
               });
             }}
@@ -150,14 +150,14 @@ function Services() {
             onClick={() => {
               setServiceProp({
                 name: "Dog Walking",
-                desc: "Sitter picks up the dog, takes it out on its walk and then drops it back to its owner.",
+                desc: "Your sitter takes your doggo for a 30min/1hr walk.",
                 img: service4,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
                 name: "Dog Walking",
-                desc: "Sitter picks up the dog, takes it out on its walk and then drops it back to its owner.",
+                desc: "Your sitter takes your doggo for a 30min/1hr walk.",
                 img: service4,
               });
             }}
@@ -175,14 +175,14 @@ function Services() {
             onClick={() => {
               setServiceProp({
                 name: "Overnight Sitting",
-                desc: "Sitter goes to the customer's place and stays overnight.",
+                desc: "Your sitter sleeps over at your home while your pet gets to snuggle in his/her own space.",
                 img: service3,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
                 name: "Overnight Sitting",
-                desc: "Sitter goes to the customer's place and stays overnight.",
+                desc: "Your sitter sleeps over at your home while your pet gets to snuggle in his/her own space.",
                 img: service3,
               });
             }}
@@ -199,14 +199,14 @@ function Services() {
             onClick={() => {
               setServiceProp({
                 name: "Drop-In Visits",
-                desc: "Sitter drops in for 20 minutes to change the pet's food + water and chills with the pet.",
+                desc: "Your sitter drops by for a quick round of play, potty break, snack time and change of drinking water, leaving your pet feeling refreshed in your absence.",
                 img: service5,
               });
             }}
             onMouseEnter={() => {
               setServiceProp({
                 name: "Drop-In Visits",
-                desc: "Sitter drops in for 20 minutes to change the pet's food + water and chills with the pet.",
+                desc: "Your sitter drops by for a quick round of play, potty break, snack time and change of drinking water, leaving your pet feeling refreshed in your absence.",
                 img: service5,
               });
             }}
