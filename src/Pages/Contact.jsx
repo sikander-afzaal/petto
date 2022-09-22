@@ -29,11 +29,11 @@ function Contact() {
     }
   };
   return (
-    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6">
+    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[95%]  gap-6">
       <h1 className="font-medium text-[38px] text-black">
         Get in <span className="text-darkOrange">Touch</span>
       </h1>
-      <p className="text-[#b1b1b1] text-xl font-medium tracking-wider">
+      <p className="text-[#b1b1b1] text-xl -mt-5 font-medium tracking-wider">
         We would like to hear from you!
       </p>
       <form className="w-full mt-6 gap-6 flex-col flex justify-center items-center">

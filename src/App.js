@@ -24,35 +24,35 @@ function App() {
     switch (modalName) {
       case "contact":
         setComponent(<Contact />);
-        setBg("bg-contact-confetti");
+        setBg(modalName);
         break;
       case "become-sitter":
         setComponent(<BecomeSitter />);
-        setBg("bg-profile-confetti");
+        setBg(modalName);
         break;
       case "pet":
         setComponent(<Pet />);
-        setBg("bg-profile-confetti");
+        setBg(modalName);
         break;
       case "sitter":
         setComponent(<Sitter />);
-        setBg("bg-sitter-confetti");
+        setBg(modalName);
         break;
       case "mobile":
         setComponent(<Mobile />);
-        setBg("bg-app-confetti");
+        setBg(modalName);
         break;
       case "about":
         setComponent(<About />);
-        setBg("bg-about-confetti");
+        setBg(modalName);
         break;
       case "testimonials":
         setComponent(<Testimonials />);
-        setBg("bg-testimonial-confetti");
+        setBg(modalName);
         break;
       case "services":
         setComponent(<Services />);
-        setBg("bg-service-confetti");
+        setBg(modalName);
         break;
 
       default:

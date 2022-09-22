@@ -7,7 +7,7 @@ import b2 from "../Assets/b2.png";
 import b3 from "../Assets/b3.png";
 function Testimonials() {
   return (
-    <div className="flex-col flex justify-center items-center isolate w-full relative max-w-[1350px] gap-6 sm:text-left text-center">
+    <div className="flex-col flex justify-center items-center isolate w-full relative 2xl:max-w-[1350px] gap-6 sm:text-left text-center">
       <h1 className="font-medium text-[38px] text-black">
         User’s <span className="text-darkOrange">Testimonials</span>
       </h1>
@@ -35,7 +35,7 @@ function Testimonials() {
             />
             <img src={review2} alt="" />
           </div>
-          <div className="relative lg:self-end">
+          <div className="relative lg:self-end -mr-10 2xl:mr-0">
             <img src={b3} className="absolute left-[0%] top-[92%]" alt="" />
             <img src={review3} alt="" />
           </div>

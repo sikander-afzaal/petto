@@ -23,7 +23,7 @@ function Services() {
     img: "",
   });
   return (
-    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px]  -mt-8 gap-6 lg:text-left text-center">
+    <div className="flex justify-start items-center isolate flex-col w-full relative  -mt-8 gap-6 lg:text-left text-center ">
       <h1 className="font-bold text-[30px] md:text-[38px] text-darkOrange tracking-[0.2em]">
         <span className="text-black font-medium">
           pett
@@ -40,17 +40,17 @@ function Services() {
         <div
           className={`xl:w-[40%] w-full ${
             serviceProp.img
-              ? "flex justify-start items-center xl:items-start gap-2 relative flex-col lg:pl-12"
+              ? "flex justify-start max-w-[800px]  items-center xl:items-start gap-2 relative flex-col lg:pl-12"
               : ""
           }   ${serviceProp.img ? "h-[612px]" : ""}`}
         >
           {serviceProp.img ? (
             <>
-              <h1 className="font-semibold text-[32px]">{serviceProp.name}</h1>
-              <p className="text-[22px] max-w-[400px]">
+              <h1 className=" font-semibold text-[32px]">{serviceProp.name}</h1>
+              <p className=" text-[22px] font-light max-w-[388px] leading-[50px]">
                 {serviceProp.desc}
               </p>{" "}
-              <button className="h-[62px] sm:w-auto w-full flex justify-center items-center rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]">
+              <button className=" h-[62px] sm:w-auto w-full flex justify-center items-center rounded-[12px] bg-mustard shadow-shadow-btn text-white py-[18px] px-[41px] font-bold text-[15px]">
                 Book Now{" "}
                 <FontAwesomeIcon
                   icon={faArrowRight}
@@ -59,7 +59,7 @@ function Services() {
               </button>
               <img
                 src={serviceProp.img}
-                className="absolute left-0 bottom-[0%] -z-[1]"
+                className="absolute max-w-[90%] left-0 -bottom-[60px] -z-[1] -ml-10"
                 alt=""
               />
             </>

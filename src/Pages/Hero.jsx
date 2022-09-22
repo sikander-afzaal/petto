@@ -31,11 +31,6 @@ function Hero({ setModalName, setModal }) {
 
   return (
     <div className="flex w-fulll justify-center items-center relative isolate px-5">
-      <img
-        src={heroBg}
-        className="absolute bottom-0 w-full left-0 -z-10 object-cover"
-        alt=""
-      />
       <div className="w-full max-w-[865px] flex items-center justify-start pt-[160px] min-h-[900px] flex-col gap-9">
         <div className="relative isolate">
           <AnimatePresence wait>

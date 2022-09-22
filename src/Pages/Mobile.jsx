@@ -7,7 +7,7 @@ import o from "../Assets/o.svg";
 import blackO from "../Assets/black-o.svg";
 function Mobile() {
   return (
-    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] gap-6 lg:text-left text-center">
+    <div className="flex justify-start items-center isolate flex-col w-full relative max-w-[1350px] pb-[40px] gap-6 lg:text-left text-center">
       <h1 className="font-medium text-[30px] md:text-[38px] text-black tracking-[0.2em]">
         Book through{" "}
         <span className="text-darkOrange font-bold">
