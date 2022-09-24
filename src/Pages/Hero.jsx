@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import pet1 from "../Assets/hero1.png";
 import pet2 from "../Assets/hero2.png";
 import pet3 from "../Assets/hero3.png";
+import pet4 from "../Assets/hero4.png";
+import pet5 from "../Assets/hero5.png";
 import heroBg from "../Assets/hero-bg.png";
 import logo from "../Assets/Logo.png";
 import { AnimatePresence, motion } from "framer-motion";
@@ -19,9 +21,14 @@ function Hero({ setModalName, setModal }) {
           setBg("third");
           break;
         case "third":
+          setBg("fourth");
+          break;
+        case "fourth":
+          setBg("fifth");
+          break;
+        case "fifth":
           setBg("first");
           break;
-
         default:
           setBg("first");
           break;
@@ -64,6 +71,28 @@ function Hero({ setModalName, setModal }) {
                 exit={{ opacity: 0 }}
                 src={pet3}
                 className="sm:w-auto sm:h-auto w-[414px] h-[320px] max-w-full absolute -z-10 bottom-0 left-1/2 -translate-x-1/2"
+                alt=""
+              />
+            )}
+            {bg === "fourth" && (
+              <motion.img
+                key={bg}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                src={pet4}
+                className="sm:w-auto sm:min-w-[550px] sm:h-auto w-full  h-auto max-w-full absolute -z-10 bottom-0 left-1/2 -translate-x-1/2"
+                alt=""
+              />
+            )}
+            {bg === "fifth" && (
+              <motion.img
+                key={bg}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                src={pet5}
+                className="sm:w-auto sm:min-w-[550px] sm:h-auto w-full  h-auto max-w-full absolute -z-10 bottom-0 left-1/2 -translate-x-1/2"
                 alt=""
               />
             )}
